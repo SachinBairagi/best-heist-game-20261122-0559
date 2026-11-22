@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Velvet Vault — a one-night heist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0b12; height: 100%; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center;
+         font-family: Georgia, 'Times New Roman', serif; color: #e8dcc0; }
+  #wrap { text-align: center; }
+  h1 { margin: 0 0 4px 0; font-size: 22px; letter-spacing: 3px; color: #d8b45a; font-weight: normal; }
+  #sub { margin: 0 0 8px 0; font-size: 12px; color: #9a8f78; letter-spacing: 1px; }
+  canvas { display: block; background: #17131f; border: 2px solid #4a3a1e;
+           box-shadow: 0 0 40px rgba(216, 180, 90, 0.12); cursor: crosshair; }
+  #help { margin-top: 8px; font-size: 12px; color: #8d8574; line-height: 1.5; }
+  #help b { color: #d8b45a; font-weight: normal; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>THE VELVET VAULT</h1>
+  <p id="sub">one thief &middot; one sapphire &middot; one very awake museum</p>
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="help">
+    <b>WASD / arrows</b> move &nbsp;&middot;&nbsp; <b>Shift</b> sneak (slower, harder to spot) &nbsp;&middot;&nbsp;
+    <b>Click</b> throw a coin to distract a guard &nbsp;&middot;&nbsp; <b>E</b> crack the vault pedestal &nbsp;&middot;&nbsp;
+    <b>R</b> restart &nbsp;&middot;&nbsp; Grab the Star Sapphire, then slip out the front door.
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
